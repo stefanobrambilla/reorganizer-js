@@ -31,3 +31,26 @@ containerMatch, setted in config, must have these class to initialize the plugin
 <div class="reorganize columns-4"></div>
 ``` 
 
+elementMatch, setted in config, must have these class to append in new columns
+
+``` html
+  <div class="col-3">Pippo</div>
+  <div class="col-2">Paperino</div>
+  <div class="col-1">Pluto</div>
+  <div class="col-2">Minnie</div>
+  <div class="col-4">Zio Paperone</div>
+``` 
+
+the complete sturcture must be
+
+``` html
+<div class="reorganize columns-4">
+
+  <div class="col-3">Pippo</div>
+  <div class="col-2">Paperino</div>
+  <div class="col-1">Pluto</div>
+  <div class="col-2">Minnie</div>
+  <div class="col-4">Zio Paperone</div>
+
+</div>
+``` 
