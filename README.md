@@ -7,7 +7,7 @@ easy config.
 
 ``` 
 wrapper:                  is the element that contains
-containerMatch: 	        is the element where to look for the item to be matched
+containerMatch: 	     is the element where to look for the item to be matched
 elementMatch: 	          is single element match
 destination:              is the element to append
 
