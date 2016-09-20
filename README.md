@@ -11,7 +11,7 @@ containerMatch: 	      is the element where to look for the item to be matched
 elementMatch: 	          is single element match
 destination:              is the element to append
 
-classColumn: 	            is a class fo a new column
+classColumn: 	          is a class fo a new column
 extraElementClass:        is a new class to add elementMatch
 
 foundation:               if there is foundation js
