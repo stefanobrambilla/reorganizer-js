@@ -1,7 +1,7 @@
 # reorganizer-js
 reorganize element grid in columns
 
-# Config
+# Setup
 
 easy config.
 
@@ -18,7 +18,7 @@ foundation:               if there is foundation js
 printExtraElementClass:   whether to print the extraElementClass
 ```
 
-# example
+# Config
 
 containerMatch, setted in config, must have these class to initialize the plugin
 
