@@ -1,7 +1,7 @@
 # reorganizer-js
 reorganize element grid in columns
 
-# setup
+# Config
 
 easy config.
 
@@ -42,6 +42,20 @@ elementMatch, setted in config, must have these class to append in new columns
 ``` 
 
 the complete sturcture must be
+
+``` html
+<div class="reorganize columns-4">
+
+  <div class="col-3">Pippo</div>
+  <div class="col-2">Paperino</div>
+  <div class="col-1">Pluto</div>
+  <div class="col-2">Minnie</div>
+  <div class="col-4">Zio Paperone</div>
+
+</div>
+``` 
+
+# Example
 
 ``` html
 <div class="reorganize columns-4">
