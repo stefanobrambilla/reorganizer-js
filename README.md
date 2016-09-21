@@ -6,7 +6,7 @@ reorganize element grid in columns
 For init the plugin
 
 ``` javascript
-REORGANIZED.init();
+REORGANIZER.init();
 ```
 
 easy config.
