@@ -90,7 +90,7 @@ html
 Result
 
 ``` html
-<div class="reorganize columns-4">
+<div class="reorganize columns-4 init-reorganized">
 
   <div class="fake-col-wrapper fake-col-wrapper-col-1 elem-reorganized">
     <div class="col-1">Pluto</div>
