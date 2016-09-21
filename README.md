@@ -3,6 +3,12 @@ reorganize element grid in columns
 
 # Setup
 
+For init the plugin
+
+``` javascript
+REORGANIZED.init();
+```
+
 easy config.
 
 ``` 
