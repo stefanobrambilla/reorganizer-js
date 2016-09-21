@@ -57,6 +57,24 @@ the complete sturcture must be
 
 # Example
 
+js
+``` javascript
+        this.configs = {
+
+            wrapper: 		        '#nav',
+            containerMatch: 	    'li.level0',
+            elementMatch: 	        'li.level1',
+            destination:            '.nav-block',
+
+            classColumn: 	        'fake-col-wrapper',
+            extraElementClass:      'elem-reorganized',
+
+            foundation:             true,
+            printExtraElementClass: true
+
+        };
+```
+html
 ``` html
 <div class="reorganize columns-4">
 
@@ -66,5 +84,30 @@ the complete sturcture must be
   <div class="col-2">Minnie</div>
   <div class="col-4">Zio Paperone</div>
 
+</div>
+``` 
+
+Result
+
+``` html
+<div class="reorganize columns-4">
+
+  <div class="fake-col-wrapper fake-col-wrapper-col-1">
+    <div class="col-1">Pluto</div>
+  </div>
+  
+  <div class="fake-col-wrapper fake-col-wrapper-col-2">
+    <div class="col-2">Paperino</div>
+    <div class="col-2">Minnie</div>
+  </div>
+  
+  <div class="fake-col-wrapper fake-col-wrapper-col-3">
+    <div class="col-3">Pippo</div>
+  </div>
+  
+  <div class="fake-col-wrapper fake-col-wrapper-col-4">
+    <div class="col-4">Zio Paperone</div>
+  </div>
+  
 </div>
 ``` 
