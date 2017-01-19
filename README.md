@@ -70,7 +70,7 @@ js
             wrapper: 		        '#nav',
             containerMatch: 	    'li.level0',
             elementMatch: 	        'li.level1',
-            destination:            '.nav-block',
+            destination:            '.nav-block > ul',
 
             classColumn: 	        'fake-col-wrapper',
             extraElementClass:      'elem-reorganized',
