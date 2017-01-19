@@ -15,7 +15,7 @@ var REORGANIZER = {
             wrapper: 		        '#nav',
             containerMatch: 	    'li.level0',
             elementMatch: 	        'li.level1',
-            destination:            '.nav-block',
+            destination:            '.nav-block > ul',
 
             classColumn: 	        'fake-col-wrapper',
             extraElementClass:      'elem-reorganized',
@@ -59,7 +59,7 @@ var REORGANIZER = {
 
         jQuery(_elemClass).each(function (n, classes){
 
-            if(classes.startsWith('column-')){
+            if(classes.startsWith('columns-')){
                 _nCol = classes;
             }
 
@@ -76,11 +76,11 @@ var REORGANIZER = {
 
             if(REORGANIZER.configs.foundation && _nCol != 5) {
 
-                _destination.append('<div class="'+REORGANIZER.configs.classColumn+' '+ REORGANIZER.configs.classColumn+'-col-'+i +' columns small-'+_foundationClass+' medium-'+_foundationClass+'"></div>');
+                _destination.append('<li><ul class="'+REORGANIZER.configs.classColumn+' '+ REORGANIZER.configs.classColumn+'-col-'+i +' columns small-'+_foundationClass+' medium-'+_foundationClass+'"></ul></li>');
 
             }else{
 
-                _destination.append('<div class="'+REORGANIZER.configs.classColumn+' '+ REORGANIZER.configs.classColumn+'-col-'+i+'"></div>');
+                _destination.append('<li><ul class="'+REORGANIZER.configs.classColumn+' '+ REORGANIZER.configs.classColumn+'-col-'+i+'"></ul></li>');
 
             }
         }
