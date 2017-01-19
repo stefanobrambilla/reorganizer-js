@@ -76,11 +76,11 @@ var REORGANIZER = {
 
             if(REORGANIZER.configs.foundation && _nCol != 5) {
 
-                _destination.append('<li><ul class="'+REORGANIZER.configs.classColumn+' '+ REORGANIZER.configs.classColumn+'-col-'+i +' columns small-'+_foundationClass+' medium-'+_foundationClass+'"></ul></li>');
+                _destination.append('<li class="'+REORGANIZER.configs.classColumn+' '+ REORGANIZER.configs.classColumn+'-col-'+i +' columns small-'+_foundationClass+' medium-'+_foundationClass+'"><ul></ul></li>');
 
             }else{
 
-                _destination.append('<li><ul class="'+REORGANIZER.configs.classColumn+' '+ REORGANIZER.configs.classColumn+'-col-'+i+'"></ul></li>');
+                _destination.append('<li class="'+REORGANIZER.configs.classColumn+' '+ REORGANIZER.configs.classColumn+'-col-'+i+'"><ul></ul></li>');
 
             }
         }
