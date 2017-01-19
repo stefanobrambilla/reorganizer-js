@@ -116,7 +116,7 @@ var REORGANIZER = {
 
             }
 
-            jQuery('.'+REORGANIZER.configs.classColumn+'-col-'+_col).append(_el);
+            jQuery('.'+REORGANIZER.configs.classColumn+'-col-'+_col > ul).append(_el);
 
         });
 
