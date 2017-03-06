@@ -93,13 +93,13 @@ var REORGANIZER = {
 
         var _element = jQuery(element);
 
-
         _element.find(REORGANIZER.configs.elementMatch).each( function(i, el){
 
             var _el         = jQuery(el);
-                _elClass    = _el.attr('class');
+            _elClass    = _el.attr('class');
 
             _elClass = _elClass.split(' ');
+            _col = '';
 
             jQuery(_elClass).each(function (n, classes){
                 if(classes.startsWith('col-')){
@@ -107,6 +107,9 @@ var REORGANIZER = {
                 }
 
             });
+
+
+            if(_col == ''){ _col = 'col-1'}
             _col = _col.split('-');
             _col = _col[1];
 
@@ -116,7 +119,7 @@ var REORGANIZER = {
 
             }
 
-            jQuery('.'+REORGANIZER.configs.classColumn+'-col-'+_col > ul).append(_el);
+            _element.find('.'+REORGANIZER.configs.classColumn+'-col-'+_col+' > ul').append(_el);
 
         });
 
